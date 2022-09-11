@@ -17,7 +17,7 @@ const Search = React.memo((props) => {
             ? ''
             : `?orderBy="title"&equalTo="${searchItem}"`
 
-        fetch('url' + query)
+        fetch('https://fetchwork-c37a0-default-rtdb.firebaseio.com/Products.json' + query)
           .then((response) => {
             return response.json()
           })

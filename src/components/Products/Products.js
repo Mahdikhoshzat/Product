@@ -23,7 +23,7 @@ const Products = () => {
   }, [])
 
   const addProductHandler = (item) => {
-    fetch('url', {
+    fetch('https://fetchwork-c37a0-default-rtdb.firebaseio.com/Products.json', {
       method: 'POST',
       body: JSON.stringify(item),
       headers: { 'Content-Type': 'application/json' },
